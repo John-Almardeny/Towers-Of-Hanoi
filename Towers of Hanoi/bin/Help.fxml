@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TextArea editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" text="The Towers of Hanoi is an ancient puzzle played with three stacks and any number of differently-sized disks. At the start, all the disks are in the leftmost stack, with the largest disk on the bottom and the smallest on the top. The object is to get all the disks over to the rightmost stack.&#10;You can only move one disk per move, and you can only move the top disk on a stack. The top disk of any stack can be moved to the top disk of any other stack, with the restriction that you can't move a larger disk on top of a smaller disk (i.e. disks can only be moved to empty stacks or on top of larger disks).&#10;To move a disk, you have three option:&#10;First: click on the disk, and then click on the tower destination.&#10;Second: Click on the button beneath the tower, then click on the button beneath the tower destination.&#10;Third: Drag the disk from the source tower and drop it on the tower destination. &#10;In either ways, if it is a legal move, the disk will be moved there automatically.&#10;&#10;Modes of Play&#10;You can choose the number of disks you start out with by selecting an option from the drop-down list in the bottom left before you start your game. There is actually a limit to the number of disks you can start out with (3-8). &#10;You can restart the game by clicking on the “Restart Game” button. Also you can undo moves by clicking on the “Undo Move” button.&#10;&#10;Saving Your Game&#10;A pop-up message box appears when you click on the “close” button, asking you if you want to save the current game status with “Yes” “No” option.&#10;If you choose “Yes” you can resume your last game by clicking on the “Resume Last Game” button in the entry window (first window). Otherwise, by choosing “No”, the game will not be saved. " wrapText="true" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" >
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+   </children>
+</GridPane>

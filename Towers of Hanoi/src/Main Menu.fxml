@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca2.OpeningScreen">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <StackPane>
+         <children>
+            <ImageView fitHeight="376.0" fitWidth="550.0" pickOnBounds="true">
+               <image>
+                  <Image url="@./splashBG.jpg" />
+               </image>
+            </ImageView>
+            <Pane style="-fx-background-color: transparent;">
+               <children>
+                  <Label layoutX="175.0" layoutY="304.0" prefHeight="31.0" prefWidth="200.0" text="By Yahya Almardeny">
+                     <font>
+                        <Font name="OCR A Extended" size="18.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="1.0" startX="0.5809523809523809" startY="0.36666666666666664">
+                           <stops>
+                              <Stop color="#b9703d" />
+                              <Stop color="#3c4cc3" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label layoutX="154.0" layoutY="38.0" text="Towers Of Hanoi" textAlignment="CENTER">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="24.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="1.0" startX="0.5142857142857142">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="#d04dc5" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label layoutX="203.0" layoutY="335.0" text="© All Rights Reserved 2017" textAlignment="CENTER" />
+                  <Button fx:id="newGame" focusTraversable="false" layoutX="200.0" layoutY="120.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Play New Game" textAlignment="CENTER" textFill="#0a0559">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="resumeGame" focusTraversable="false" layoutX="200.0" layoutY="160.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Resume Saved Game" textAlignment="CENTER" textFill="#850961">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="help" focusTraversable="false" layoutX="200.0" layoutY="200.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Help" textAlignment="CENTER" textFill="BROWN">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="exit" focusTraversable="false" layoutX="200.0" layoutY="240.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Exit" textAlignment="CENTER" textFill="#691e11">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</GridPane>
